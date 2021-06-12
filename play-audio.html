@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sermons</title>
+    <link rel="stylesheet" href="./styles/page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="static-search">
+        <input
+          type="text"
+          placeholder="Search for Sermons and Article here ..."
+        />
+        <div class="static-search-icon"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="logo">
+        <p>ZC</p>
+      </div>
+      <div class="right-nav">
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="sermon.html">Sermons</a>
+          <a href="songs.html">Songs</a>
+          <a href="article.html" class="navlink-active">Articles</a>
+        </div>
+        <div class="nav-search-icon">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="audio-container">
+      <audio id="my-audio">
+        <source src="./music/music.m4a" />
+      </audio>
+      <div class="audio-thumbnail">
+        <img src="./images/arome.jpeg" alt="audio-image" />
+      </div>
+      <div class="audio-controls">
+        <div class="duration">
+          <div class="duration-bar" id="duration-bar">
+            <div class="duration-fill-abstract" id="abstract-fill"></div>
+            <div class="duration-fill" id="duration-fill"></div>
+          </div>
+          <div class="end">
+            <span id="start">0:00</span> /
+            <span id="end">0:00</span>
+          </div>
+        </div>
+        <div class="audio-state-container">
+          <div class="pause-play">
+            <i class="fas fa-play" id="play"></i
+            ><i class="fas fa-pause" id="pause"></i>
+          </div>
+          <div class="volume">
+            <div>
+              <i class="fas fa-volume-up" id="volume-icon"></i>
+              <span id="volume-percent">0%</span>
+            </div>
+            <div class="volume-bar" id="volume-bar">
+              <div class="volume-guage" id="volume-guage"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="audio-description">
+        <h2 class="audio-title">
+          Working with God Almighty
+          <a href="#" class="audio-download">Download</a>
+        </h2>
+        <p>
+          <span class="b">Posted by: </span> Admin
+          <span class="b">On: </span>Thurs, 19th May, 2020
+        </p>
+      </div>
+    </div>
+    <div class="related-header">
+      <h2>Related Audios</h2>
+    </div>
+    <div class="related-list">
+      <a href="#"
+        >MR mathias preaching <span>Author:</span> Apt. Pst. Dr. Mathias Jiya
+        Nma</a
+      >
+      <a href="#"
+        >MR mathias preaching <span>Author:</span> Apt. Pst. Dr. Mathias Jiya
+        Nma</a
+      >
+      <a href="#"
+        >MR mathias preaching <span>Author:</span> Apt. Pst. Dr. Mathias Jiya
+        Nma</a
+      >
+    </div>
+    <footer>
+      <div class="link-container">
+        <div class="quick-links-cont">
+          <div class="footer-header">
+            <h3>Quick Links</h3>
+          </div>
+          <div class="quick-links">
+            <a href="#">FAQs</a>
+            <a href="#">Privacy and Policy</a>
+          </div>
+        </div>
+        <div class="social-links-cont">
+          <div class="footer-header">
+            <h3>Social Links</h3>
+          </div>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          &copy; 2021. Developed By
+          <a href="quantum2001.github.io">Samuel Lawal</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="./scripts/play-audio.js"></script>
+</html>

@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;600&family=Pacifico&display=swap");
+
+:root {
+  --primary: #755139ff;
+  --secondary: #f2edd7ff;
+}
+::selection {
+  color: var(--primary);
+  background-color: rgba(241, 228, 168, 0.5);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #fff;
+  color: #333;
+  font-family: "Asap", sans-serif;
+  overflow-x: hidden;
+  width: 100vw;
+}
+.b {
+  font-weight: bold;
+}
+.static-nav {
+  position: fixed;
+  top: 0;
+}
+a {
+  text-decoration: none;
+}
+.static-nav {
+  display: none;
+}
+nav {
+  width: 100vw;
+  display: flex;
+  font-size: 16px;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+}
+nav a {
+  color: var(--secondary);
+}
+nav .nav-links {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  padding-right: 40px;
+}
+nav .nav-links a {
+  padding: 10px 0;
+  border-bottom: 3px solid transparent;
+}
+
+nav .nav-links a:hover {
+  border-bottom: 3px solid var(--secondary);
+}
+nav .nav-links .navlink-active {
+  font-weight: 600;
+  border-bottom: 3px solid var(--secondary);
+}
+.logo p {
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+  color: var(--secondary);
+  padding-left: 20px;
+}
+.landing {
+  background: url(../images/landing.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 100vh;
+  color: var(--secondary);
+}
+.welcome-text {
+  width: 50%;
+  min-width: 300px;
+  margin: 50px auto;
+  margin-top: 100px;
+  max-width: 700px;
+}
+.welcome-text p {
+  font-size: 20px;
+  text-align: center;
+}
+.search-container {
+  background: white;
+  border-radius: 999px;
+  height: 50px;
+  width: 50%;
+  min-width: 350px;
+  margin: 0 auto;
+  max-width: 700px;
+  overflow: hidden;
+  display: flex;
+  color: var(--primary);
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.search-container ::placeholder {
+  color: var(--primary);
+}
+.search-container:focus-within {
+  box-shadow: 0 0 5px var(--secondary);
+}
+form .search-container input {
+  height: 50px;
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding-left: 20px;
+  font-size: 16px;
+  color: var(--primary);
+}
+form .search-container input:focus {
+  border: none;
+  outline: none;
+}
+.search-icon,
+.cancel-icon {
+  width: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.cancel-icon {
+  display: none;
+}
+
+.search-icon button {
+  border: none;
+  background: transparent;
+  color: var(--primary);
+  width: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.latest-sermons {
+  box-sizing: border-box;
+}
+.sermon-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sermon-header {
+  padding-left: 40px;
+  color: var(--primary);
+  position: relative;
+}
+.sermon-header::after {
+  content: "";
+  display: block;
+  width: 40%;
+  max-width: 100px;
+  height: 4px;
+  background: var(--primary);
+  margin-top: 8px;
+  border-radius: 9px;
+}
+.sermon {
+  display: flex;
+  height: 200px;
+  margin: 20px auto;
+  overflow: hidden;
+  border: 1px solid var(--primary);
+  width: 45%;
+  min-width: 350px;
+  border-radius: 15px;
+  position: relative;
+}
+.sermon .sermon-image {
+  width: 30%;
+  min-width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.sermon .sermon-image img {
+  height: 100%;
+  width: auto;
+}
+.sermon .sermon-properties {
+  padding-left: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+.sermon .sermon-description {
+  font-size: 14px;
+  padding: 10px 0;
+}
+.sermon .sermon-properties a {
+  padding: 8px;
+  margin: 10px 0;
+  background: linear-gradient(to right, var(--primary), black);
+  color: var(--secondary);
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.sermon .sermon-properties a:hover {
+  background: black;
+}
+.sermon-title {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.sermon-by {
+  font-weight: bold;
+}
+.sermon .sermon-tag-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3px 20px;
+  background: var(--primary);
+  color: var(--secondary);
+  border-bottom-left-radius: 5px;
+  font-size: 13px;
+}
+
+.article {
+  margin: 20px 0;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  color: #333;
+  border-bottom: 1px solid var(--primary);
+}
+.article a {
+  color: var(--primary);
+  font-weight: bold;
+  padding: 10px 0;
+  display: block;
+}
+.article-tag {
+  margin: 10px 0;
+  border-radius: 99px;
+  background: var(--primary);
+  color: var(--secondary);
+  padding: 3px;
+  width: 100px;
+  font-size: 14px;
+  text-align: center;
+}
+.upload {
+  text-align: center;
+}
+.upload p {
+  color: var(--primary);
+  margin: 30px 0;
+}
+.upload-link {
+  margin: 20px 0;
+}
+.upload a {
+  padding: 10px 20px;
+  background-color: rgb(241, 228, 168);
+  color: var(--primary);
+  font-size: 18px;
+  border-radius: 99px;
+  text-align: center;
+}
+.songs-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+  flex-wrap: wrap;
+}
+.song {
+  width: 250px;
+  overflow: hidden;
+  height: 300px;
+  border-radius: 20px;
+  border: 1px solid var(--primary);
+  margin: 15px 0;
+}
+.song-image {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.song-image img {
+  height: 100%;
+}
+.song-image .image-cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary);
+}
+.playing-effect {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border: 3px solid transparent;
+  border-top: 3px solid var(--secondary);
+  border-right: 3px solid var(--secondary);
+  border-radius: 50%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  animation: rotate 3s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.play-effect-icon {
+  z-index: 4;
+}
+.song-details {
+  font-size: 12px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.song-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.song-controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--primary);
+
+  height: 50px;
+}
+.article-by {
+  font-size: 14px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.song .download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.song .download a {
+  color: var(--secondary);
+}
+.pause-play {
+  display: flex;
+  align-items: center;
+}
+.pause-play button {
+  border: none;
+  background: transparent;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 22px;
+  color: var(--secondary);
+}
+.pause {
+  display: none;
+}
+footer {
+  padding: 20px 0;
+  box-sizing: border-box;
+  background: black;
+  color: var(--secondary);
+}
+footer a {
+  color: rgb(199, 144, 110);
+  padding: 0 20px;
+}
+footer a:hover {
+  color: var(--secondary);
+}
+.logo-footer p {
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+  color: var(--secondary);
+  padding-left: 20px;
+}
+.link-container {
+  display: flex;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.quick-links {
+  margin: 10px 0;
+}
+.social-links-cont,
+.quick-links-cont {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social-links {
+  margin: 10px 0;
+  display: flex;
+}
+.social-links a {
+  padding: 0 20px;
+}
+.copyright {
+  text-align: center;
+  padding: 10px 0;
+}
+@media screen and (max-width: 700px) {
+  .quick-links-cont .quick-links {
+    display: flex;
+    flex-direction: column;
+  }
+  .quick-links-cont .quick-links a {
+    display: block;
+  }
+}
