@@ -17,13 +17,15 @@ body {
   color: #333;
   font-family: "Asap", sans-serif;
   overflow-x: hidden;
-  width: 100vw;
+  width: 100%;
+  position: relative;
+
 }
 a {
   text-decoration: none;
 }
 nav {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,14 +79,46 @@ nav .nav-links .navlink-active {
 .static-search {
   display: none;
   position: absolute;
-  height: 100%;
+  left: 0;
+  top: 70px;
+  height: 70px;
   width: 100%;
-  background: #fff;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.554);
+}
+.static-search form {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.static-search input {
+  height: 70%;
+  width: 90%;
+  max-width: 600px;
+  border: none;
+  border-top-left-radius: 99px;
+  border-bottom-left-radius: 99px;
+  padding:0 10px;
+  font-size: 14px;
+  outline: none;
+}
+.static-search button {
+  border: none;
+  font-size: 20px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  background: var(--primary);
+  color: var(--secondary);
+  height: 70%;
+  border-top-right-radius: 99px;
+  border-bottom-right-radius: 99px;
 }
 .welcome {
   margin-top: 69px;
   height: 40vh;
-  width: 100vw;
+  width: 100%;
   background: url(../images/pages.svg);
   background-position: top;
   background-size: cover;
@@ -94,26 +128,47 @@ nav .nav-links .navlink-active {
   justify-content: center;
   color: var(--secondary);
 }
-.sermon-list {
-  padding: 0 100px;
+.sermon-cat-list {
+  padding: 20px;
 }
-
-.sermon {
+.sermon-cat-list h2 {
+  margin: 15px 0;
+}
+.sermon-cat-item {
+  background: var(--secondary);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+.sermon-cat-item a {
+  color: var(--primary);
+}
+.sermon-cat-item span {
+  padding: 4px 6px;
+  background: var(--primary);
+  color: var(--secondary);
+  border-radius: 10px;
+}
+.sermon-cat-cont {
   padding: 15px 20px;
   box-sizing: border-box;
   border-bottom: 1px solid var(--primary);
 }
-.sermon a {
+.sermon-cat-cont a {
   color: #333;
 }
-.sermon a:hover {
+.sermon-cat-cont a:hover {
   color: var(--primary);
 }
 .by {
   font-weight: bold;
   padding: 15px 0;
 }
-.tag {
+.cat-tag {
   margin: 10px 0;
   border-radius: 99px;
   background: var(--primary);
@@ -247,7 +302,7 @@ footer a:hover {
 }
 .search {
   margin: 15px 0;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   border-bottom: 1px solid var(--primary);
 }
 .search a {
@@ -262,12 +317,13 @@ footer a:hover {
   text-align: center;
   background: var(--primary);
   color: var(--secondary);
-  border-radius: 5px;
+  border-radius: 99px;
 }
 .time {
   color: #333;
   font-size: 14px;
   font-weight: bold;
+  padding: 5px 0;
 }
 /* Audio Styling*/
 .audio-container {
@@ -434,8 +490,22 @@ footer a:hover {
   .quick-links-cont .quick-links a {
     display: block;
   }
+  .search-list {
+    padding: 0 20px;
+  }
+  .search {
+    margin: 15px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--primary);
+  }
+  .search a {
+    color: var(--primary);
+  }
 }
-@media screen and (max-width: 500) {
+@media screen and (max-width: 500px) {
+  nav {
+    padding: 0;
+  }
   .audio-container {
     padding: 10px 5px;
   }
