@@ -191,7 +191,7 @@ form .search-container input:focus {
 }
 .sermon .sermon-image {
   width: 30%;
-  min-width: 150px;
+  min-width: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -498,5 +498,12 @@ footer a:hover {
     height: 150px;
   
   }
+  .social-links {
+    flex-direction: column;
+  }
 }
-
+@media screen and (max-width: 350px) {
+  .sermon-image {
+    width: 25%;
+  }
+}
