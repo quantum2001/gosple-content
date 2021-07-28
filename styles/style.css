@@ -501,6 +501,9 @@ footer a:hover {
   .social-links {
     flex-direction: column;
   }
+  .social-links a {
+    padding: 10px 20px;
+  }
 }
 @media screen and (max-width: 350px) {
   .sermon-image {
