@@ -386,7 +386,7 @@ form .search-container input:focus {
   justify-content: space-around;
   align-items: center;
   background: var(--primary);
-  height: 35px;
+  height: 36px;
 }
 .article-by {
   font-size: 14px;
