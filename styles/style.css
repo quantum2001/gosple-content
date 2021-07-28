@@ -313,15 +313,17 @@ form .search-container input:focus {
   flex-wrap: wrap;
 }
 .song {
-  width: 250px;
+  width: 45%;
+  max-width: 250px;
+  min-width: 150px;
   overflow: hidden;
-  height: 300px;
+  height: 250px;
   border-radius: 20px;
   border: 1px solid var(--primary);
   margin: 15px 0;
 }
 .song-image {
-  height: 200px;
+  height: 150px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -519,6 +521,17 @@ footer a:hover {
     background-position: top;
     min-height: 400px;
     color: var(--secondary);
+  }
+}
+@media screen and (max-width: 500px) {
+  nav {
+    padding: 0;
+  }
+  .audio-container {
+    padding: 10px 5px;
+  }
+  .article-image {
+    height: 200px;
   }
 }
 @media screen and (max-width: 350px) {
