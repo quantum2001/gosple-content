@@ -319,7 +319,7 @@ form .search-container input:focus {
   overflow: hidden;
   height: 250px;
   border-radius: 20px;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--secondary);
   margin: 15px 0;
 }
 .song-image {
