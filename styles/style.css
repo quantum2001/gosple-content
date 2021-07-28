@@ -508,6 +508,8 @@ footer a:hover {
   }
   .social-links {
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
   .social-links a {
     padding: 10px 20px;
@@ -520,6 +522,9 @@ footer a:hover {
     background-position: top;
     min-height: 400px;
     color: var(--secondary);
+  }
+  footer a {
+    padding: 0 6px;
   }
 }
 @media screen and (max-width: 500px) {
