@@ -497,7 +497,7 @@ footer a:hover {
 
   .quick-links-cont .quick-links {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
   }
   .quick-links-cont .quick-links a {
     display: block;
