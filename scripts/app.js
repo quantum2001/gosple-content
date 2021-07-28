@@ -39,10 +39,12 @@ toogleBtn.addEventListener('click', () => {
 
 const searchBtn = document.querySelector('.nav-search-icon')
 const staticSearch = document.querySelector('.static-search')
-searchBtn.addEventListener('click', () => {
-    if (staticSearch.style.display == 'flex') {
-        staticSearch.style.display = 'none'
-    } else {
-        staticSearch.style.display = 'flex'
-    }
-})
+if (searchBtn) {
+    searchBtn.addEventListener('click', () => {
+        if (staticSearch.style.display == 'flex') {
+            staticSearch.style.display = 'none'
+        } else {
+            staticSearch.style.display = 'flex'
+        }
+    })
+}
