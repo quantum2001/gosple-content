@@ -317,7 +317,7 @@ form .search-container input:focus {
   max-width: 250px;
   min-width: 150px;
   overflow: hidden;
-  height: 250px;
+  height: 235px;
   border-radius: 20px;
   border: 1px solid var(--primary);
   margin: 15px 0;
@@ -386,8 +386,7 @@ form .search-container input:focus {
   justify-content: space-around;
   align-items: center;
   background: var(--primary);
-
-  height: 50px;
+  height: 35px;
 }
 .article-by {
   font-size: 14px;
