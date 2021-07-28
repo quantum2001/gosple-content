@@ -38,12 +38,15 @@ a {
   display: none;
 }
 nav {
-  display: flex;
-  font-size: 16px;
   width: 100%;
-  height: 70px;
-  align-items: center;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background: var(--primary);
+  position: fixed;
+  top: 0;
+  padding: 0 20px;
   box-sizing: border-box;
   z-index: 99;
 }
@@ -81,14 +84,15 @@ nav .nav-links .navlink-active {
   background-position: center;
   background-repeat: no-repeat;
   background-position: top;
-  min-height: 100vh;
+  min-height: 500px;
   color: var(--secondary);
 }
 .welcome-text {
   width: 50%;
   min-width: 300px;
   margin: 50px auto;
-  margin-top: 100px;
+  margin-top: 69px;
+  padding-top: 70px;
   max-width: 700px;
 }
 .welcome-text p {
@@ -465,13 +469,16 @@ footer a:hover {
   .landing {
     max-width: 100%;
   }
+  
   nav .nav-links {
     display: none;
     position: absolute;
     top: 60px;
     left: 0;
     flex-direction: column;
-    background-color: var(--primary);
+    background-color: rgba(117, 81, 57, 0.643);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
     width: 100%;
     text-align: center;
     padding: 20px 15px;
@@ -503,6 +510,15 @@ footer a:hover {
   }
   .social-links a {
     padding: 10px 20px;
+  }
+  .landing {
+    background: url(../images/landing.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 400px;
+    color: var(--secondary);
   }
 }
 @media screen and (max-width: 350px) {

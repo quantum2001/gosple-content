@@ -85,6 +85,8 @@ nav .nav-links .navlink-active {
   width: 100%;
   justify-content: center;
   background: rgba(0, 0, 0, 0.554);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
 }
 .static-search form {
   width: 95%;
@@ -254,7 +256,7 @@ footer a:hover {
   color: var(--primary);
 }
 .article-view-container {
-  margin-top: 80px;
+  margin-top: 40px;
   padding: 100px;
   box-sizing: border-box;
 }
@@ -264,6 +266,13 @@ footer a:hover {
 .article-view-content {
   margin-top: 30px;
   font-size: 17px;
+}
+.article-image {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 2px solid var(--primary);
+  height: 300px;
 }
 .related-header {
   padding-left: 40px;
@@ -508,6 +517,9 @@ footer a:hover {
   }
   .audio-container {
     padding: 10px 5px;
+  }
+  .article-image {
+    height: 200px;
   }
 }
 
