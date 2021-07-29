@@ -393,6 +393,9 @@ form .search-container input:focus {
   padding-bottom: 10px;
   font-weight: bold;
 }
+.article-by i {
+  margin: 0 5px;
+}
 .song .download {
   display: flex;
   justify-content: center;
